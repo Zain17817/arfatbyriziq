@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katalog Batik Riziq - Arfat by Riziq</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigasi -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">Arfat<span>byRiziq</span></a>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#produk">Produk</a></li>
+                <li><a href="#motif">Pesan Seragam</a></li>
+                <li><a href="#testimoni">Testimoni</a></li>
+                <li><a href="#tentang">Tentang</a></li>
+                <li><a href="#reseller" class="cta-nav">Join Reseller</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Tugas 1: Homepage dengan Section Produk & Join Reseller -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Batik Premium <span> <br>Arfat by Riziq</span></h1>
+            <p>Koleksi batik eksklusif dengan motif tradisional dan modern. Kualitas terbaik untuk kenyamanan maksimal.</p>
+            <div class="hero-buttons">
+                <a href="#produk" class="btn-primary">Lihat Katalog</a>
+                <a href="#reseller" class="btn-secondary">Join Reseller</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="/asset/tumpukan.jpeg" alt="Batik Arfat by Riziq">
+        </div>
+    </section>
+
+    <!-- Slider Produk (Tugas 3) -->
+     <section id="produk">
+        <div class="slider-container">
+            <div class="section-header">
+                
+                <h2>Produk Kami</h2>
+                <p>Lihat koleksi dari Arfat by Riziq</p>
+            </div>
+    </section>
+            <div class="slider">
+                <div class="slider-track">
+                    <div class="slide">
+                        <img src="/asset/celana.jpeg" alt="Celana Batik">
+                        <div class="slide-info">
+                            <h4>Celana Batik</h4>
+                            <p>Lihat Koleksi</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="/asset/rok.jpeg" alt="Rok">
+                        <div class="slide-info">
+                            <h4>Rok</h4>
+                            <p>Lihat Koleksi</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="/asset/mukena.jpeg" alt="Mukena">
+                        <div class="slide-info">
+                            <h4>Mukena</h4>
+                            <p>Lihat Koleksi</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="/asset/setelan.jpeg" alt="Setelan">
+                        <div class="slide-info">
+                            <h4>Setelan</h4>
+                            <p>Lihat Koleksi</p>
+                        </div>
+                    </div>
+                    
+                    <div class="slide">
+                        <img src="/asset/sarung.jpg" alt="Sarung Batik">
+                        <div class="slide-info">
+                            <h4>Sarung Batik</h4>
+                            <p>Lihat Koleksi</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="/asset/rok.jpeg" alt="Rok">
+                        <div class="slide-info">
+                            <h4>Rok</h4>
+                            <p>Lihat Koleksi</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="/asset/mukena.jpeg" alt="Mukena">
+                        <div class="slide-info">
+                            <h4>Mukena</h4>
+                            <p>Lihat Koleksi</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="/asset/setelan.jpeg" alt="Setelan">
+                        <div class="slide-info">
+                            <h4>Setelan</h4>
+                            <p>Lihat Koleksi</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="slider-btn prev-btn">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="slider-btn next-btn">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+
+
+    
+<!-- Produk Terbaru Grid Card -->
+<div class="products-container">
+    <div class="section-header">
+        <h2>Produk Terbaru</h2>
+        <p>Lihat koleksi terbaru dari Arfat by Riziq</p>
+    </div>
+    
+    <div class="products-grid">
+        <!-- Produk yang tampil awal (3 produk pertama) -->
+        <div class="product-card show">
+            <img src="/asset/celana.jpeg" alt="Celana Batik">
+            <div class="product-info">
+                <h4>Celana Batik</h4>
+                <p class="price">Rp 40.000</p>
+            </div>
+        </div>
+        
+        <div class="product-card show">
+            <img src="/asset/rok.jpeg" alt="Rok">
+            <div class="product-info">
+                <h4>Rok</h4>
+                <p class="price">Rp 35.000</p>
+            </div>
+        </div>
+        
+        <div class="product-card show">
+            <img src="/asset/mukena.jpeg" alt="Mukena">
+            <div class="product-info">
+                <h4>Mukena</h4>
+                <p class="price">Rp 125.000</p>
+            </div>
+        </div>
+        
+        <!-- Produk yang tersembunyi awal -->
+        <div class="product-card">
+            <img src="/asset/setelan.jpeg" alt="Setelan">
+            <div class="product-info">
+                <h4>Setelan</h4>
+                <p class="price">Rp 84.000</p>
+            </div>
+        </div>
+        
+        <div class="product-card">
+            <img src="/asset/sarung.jpg" alt="Sarung Batik">
+            <div class="product-info">
+                <h4>Sarung Batik</h4>
+                <p class="price">Rp 30.000</p>
+            </div>
+        </div>
+        
+        <div class="product-card">
+            <img src="/asset/rok.jpeg" alt="Rok">
+            <div class="product-info">
+                <h4>Rok</h4>
+                <p class="price">Rp 35.000</p>
+            </div>
+        </div>
+        
+        <div class="product-card">
+            <img src="/asset/mukena.jpeg" alt="Mukena">
+            <div class="product-info">
+                <h4>Mukena</h4>
+                <p class="price">Rp 125.000</p>
+            </div>
+        </div>
+        
+        <div class="product-card">
+            <img src="/asset/setelan.jpeg" alt="Setelan">
+            <div class="product-info">
+                <h4>Setelan</h4>
+                <p class="price">Rp 84.000</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="show-more-container">
+        <button class="show-more-btn" id="showMoreBtn">
+            Tampilkan Lebih Banyak <i class="fas fa-chevron-down"></i>
+        </button>
+    </div>
+</div>
+        
+        <!-- Section Promo (Tugas 3) -->
+        <div class="promo-section">
+            <div class="promo-content">
+                <h2>Menerima Pesanan</h2>
+                <h2 class="nrimo">Seragam Batik Custom</h2>
+                <p>Kami melayani pemesanan seragam batik custom untuk instansi, <br> hajatan, komunitas, sekolah, maupun acara khusus. <br> Anda bebas menentukan konsep desain baik motif klasik, modern, maupun kombinasi keduanya.</p>
+                <p>Kami siap membantu proses konsultasi desain agar hasil akhir tetap selaras dengan karakter acara atau organisasi Anda.</p>
+                <a href="https://wa.me/6285879562367?text=Halo,%20saya%20ingin%20bertanya%20tentang%20promo%20batik%20Arfat%20by%20Riziq" class="btn-primary" target="_blank">
+                    <i class="fab fa-whatsapp"></i> Konsultasi via WhatsApp
+                </a>
+            </div>
+            <div class="promo-image">
+                <img src="/asset/seragam.jpeg" alt="Seragam Batik">
+            </div>
+        </div>
+    </section>
+
+    <!-- Tugas 2: Halaman Pilih Motif - Pesan Seragam -->
+    <section id="motif" class="section motif-section">
+        <div class="section-header">
+            <h2>Pesan Seragam Batik Custom</h2>
+            <p>Desain seragam batik untuk komunitas, perusahaan, atau acara khusus</p>
+        </div>
+        
+        <div class="motif-container">
+            <div class="motif-form">
+                <h3>Form Pemesanan Seragam</h3>
+                
+                <div class="form-group">
+                    <label for="nama">Nama Lengkap</label>
+                    <input type="text" id="nama" placeholder="Masukkan nama lengkap">
+                </div>
+                
+                <div class="form-group">
+                    <label for="wa">Nomor WhatsApp</label>
+                    <input type="tel" id="wa" placeholder="Contoh: 085879562367">
+                </div>
+                
+                <div class="form-group">
+                    <label for="motif">Pilih Jenis Batik</label>
+                    <div class="motif-options">
+                        <div class="motif-option active" data-motif="parang">
+                            <img src="/asset/parang.jpeg" alt="Kain Kombinasi Tulis">
+                            <p>Kain Hoki-hokian</p>
+                        </div>
+                        <div class="motif-option" data-motif="mega-mendung">
+                            <img src="/asset/WhatsApp Image 2026-01-29 at 12.25.34.jpeg" alt="Kain Cap Halus">
+                            <p>Kain Cap Halus</p>
+                        </div>
+                        <div class="motif-option" data-motif="kawung">
+                            <img src="/asset/WhatsApp Image 2026-01-29 at 12.25.34 (1).jpeg" alt="Kain Printing">
+                            <p>Kain Printing</p>
+                        </div>
+                        <div class="motif-option" data-motif="tumpal">
+                            <img src="/asset/tumpal.png" alt="Motif Tumpal">
+                            <p>Custom</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- <div class="form-group">
+                    <label for="ukuran">Ukuran Seragam</label>
+                    <select id="ukuran">
+                        <option value="">Pilih ukuran</option>
+                        <option value="S">S (Small)</option>
+                        <option value="M">M (Medium)</option>
+                        <option value="L">L (Large)</option>
+                        <option value="XL">XL (Extra Large)</option>
+                        <option value="XXL">XXL (Double Extra Large)</option>
+                        <option value="Jumbo">Jumbo</option>
+                    </select>
+                </div> -->
+                
+                <div class="form-group">
+                    <label for="jumlah">Jumlah paket</label>
+                    <div class="jumlah-input">
+                        <button class="jumlah-btn minus">-</button>
+                        <input type="number" id="jumlah" value="1" min="1" max="1000">
+                        <button class="jumlah-btn plus">+</button>
+                    </div>
+                    <p class="info-text">Minimal pembelian 1 paket (berisi 10 pcs)</p>
+                </div>
+                
+                <div class="form-group">
+                    <label for="catatan">Catatan Tambahan (Opsional)</label>
+                    <textarea id="catatan" rows="3" placeholder="Contoh: detail ukuran, logo perusahaan, warna khusus, dll."></textarea>
+                </div>
+                
+                <button class="btn-wa" id="kirim-wa">
+                    <i class="fab fa-whatsapp"></i> Kirim ke WhatsApp Admin
+                </button>
+                
+                <!-- <div class="order-summary">
+                    <h4>Ringkasan Pesanan</h4>
+                    <div class="summary-detail">
+                        <div class="summary-row">
+                            <span>Motif:</span>
+                            <span id="summary-motif">Parang</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Ukuran:</span>
+                            <span id="summary-ukuran">-</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Jumlah:</span>
+                            <span id="summary-jumlah">1 pcs</span>
+                        </div>
+                        <div class="summary-row total">
+                            <span>Estimasi Harga:</span>
+                            <span id="summary-harga">Rp 0</span>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+            
+            <div class="motif-info">
+                <h3>Info Pemesanan Seragam</h3>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> Minimal pemesanan 10 unit</li>
+                    <li><i class="fas fa-check-circle"></i> Waktu produksi 7-14 hari kerja</li>
+                    <li><i class="fas fa-check-circle"></i> Bisa request motif custom</li>
+                    <li><i class="fas fa-check-circle"></i> Free konsultasi desain</li>
+                    <li><i class="fas fa-check-circle"></i> Harga sudah termasuk packaging</li>
+                </ul>
+                <div class="info-card">
+                    <h4><i class="fas fa-phone-alt"></i> Kontak Admin</h4>
+                    <p>Untuk pertanyaan lebih lanjut, hubungi:</p>
+                    <p><strong>0858-7956-2367</strong> (Admin Arfat)</p>
+                    <p>Senin - Jumat: 08.00 - 17.00 WIB</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tugas 4: Galeri Testimoni Reseller -->
+    <section id="testimoni" class="section testimoni-section">
+        <div class="section-header">
+            <h2>Testimoni Reseller</h2>
+            <p>Lihat pengalaman para reseller sukses Arfat by Riziq</p>
+        </div>
+        
+        <div class="testimoni-grid">
+            <div class="testimoni-card">
+                <div class="testimoni-header">
+                    <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Reseller 1">
+                    <div class="testimoni-info">
+                        <h4>Sari Dewi</h4>
+                        <p>Reseller sejak 2021</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="testimoni-text">"Sejak jadi reseller Arfat by Riziq, omzet saya naik 3x lipat. Produknya berkualitas dan banyak diminati."</p>
+                <div class="testimoni-footer">
+                    <span><i class="fas fa-map-marker-alt"></i> Bandung</span>
+                </div>
+            </div>
+            
+            <div class="testimoni-card">
+                <div class="testimoni-header">
+                    <img src="https://randomuser.me/api/portraits/men/54.jpg" alt="Reseller 2">
+                    <div class="testimoni-info">
+                        <h4>Budi Santoso</h4>
+                        <p>Reseller sejak 2022</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="testimoni-text">"Support dari admin sangat membantu. Stock update cepat dan sistem dropship memudahkan."</p>
+                <div class="testimoni-footer">
+                    <span><i class="fas fa-map-marker-alt"></i> Jakarta</span>
+                </div>
+            </div>
+            
+            <div class="testimoni-card">
+                <div class="testimoni-header">
+                    <img src="https://randomuser.me/api/portraits/women/67.jpg" alt="Reseller 3">
+                    <div class="testimoni-info">
+                        <h4>Maya Indah</h4>
+                        <p>Reseller sejak 2020</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="testimoni-text">"Produk batiknya selalu trending. Banyak pelanggan repeat order karena kualitasnya terjamin."</p>
+                <div class="testimoni-footer">
+                    <span><i class="fas fa-map-marker-alt"></i> Surabaya</span>
+                </div>
+            </div>
+            
+            <div class="testimoni-card">
+                <div class="testimoni-header">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Reseller 4">
+                    <div class="testimoni-info">
+                        <h4>Rizki Pratama</h4>
+                        <p>Reseller sejak 2023</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="testimoni-text">"Harga reseller sangat kompetitif. Saya bisa jual dengan margin yang lumayan."</p>
+                <div class="testimoni-footer">
+                    <span><i class="fas fa-map-marker-alt"></i> Yogyakarta</span>
+                </div>
+            </div>
+            
+            <div class="testimoni-card">
+                <div class="testimoni-header">
+                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Reseller 5">
+                    <div class="testimoni-info">
+                        <h4>Dewi Lestari</h4>
+                        <p>Reseller sejak 2021</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="testimoni-text">"Foto produk yang disediakan sangat bagus, mudah untuk dipasarkan di media sosial."</p>
+                <div class="testimoni-footer">
+                    <span><i class="fas fa-map-marker-alt"></i> Semarang</span>
+                </div>
+            </div>
+            
+            <div class="testimoni-card">
+                <div class="testimoni-header">
+                    <img src="https://randomuser.me/api/portraits/men/76.jpg" alt="Reseller 6">
+                    <div class="testimoni-info">
+                        <h4>Agus Setiawan</h4>
+                        <p>Reseller sejak 2022</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="testimoni-text">"Sistem pre-order memudahkan cash flow. Tidak perlu modal besar untuk mulai berjualan."</p>
+                <div class="testimoni-footer">
+                    <span><i class="fas fa-map-marker-alt"></i> Medan</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- CTA Join Reseller -->
+        <div class="cta-reseller" id="reseller">
+            <div class="cta-content">
+                <h2>Gabung Jadi Reseller Sekarang!</h2>
+                <p>Dapatkan keuntungan hingga 40% setiap transaksi. Dukungan penuh dari tim Arfat by Riziq.</p>
+                <ul>
+                    <li><i class="fas fa-check"></i> Harga reseller spesial</li>
+                    <li><i class="fas fa-check"></i> Bebas menentukan harga jual</li>
+                    <li><i class="fas fa-check"></i> Sistem dropship tersedia</li>
+                    <li><i class="fas fa-check"></i> Stock update rutin</li>
+                    <li><i class="fas fa-check"></i> Materi promosi siap pakai</li>
+                </ul>
+                <a href="https://wa.me/6285930454966" class="btn-primary" target="_blank">
+                    <i class="fab fa-whatsapp"></i> Daftar via WhatsApp
+                </a>
+            </div>
+            <div class="cta-image">
+                <img src="asset/Screenshot_3.png" alt="Join Reseller">
+            </div>
+        </div>
+    </section>
+
+    <!-- Tugas 1: Halaman Tentang Arfat by Riziq -->
+    <section id="tentang" class="section tentang-section">
+        <div class="section-header">
+            <h2>Tentang Arfat by Riziq</h2>
+            <p>Mengenal lebih dekat brand batik berkualitas kami</p>
+        </div>
+        
+        <div class="tentang-container">
+            <div class="tentang-image">
+                <img src="asset/Screenshot_20260129-114408.jpg.jpeg" alt="Proses Pembuatan Batik">
+            </div>
+            <div class="tentang-content">
+                <h3>Kami Hadir Sejak 2018</h3>
+                <p>Arfat by Riziq adalah brand batik yang mengusung nilai-nilai tradisional dengan sentuhan modern. Kami berkomitmen untuk menghasilkan produk batik berkualitas tinggi dengan motif yang unik dan elegan.</p>
+                
+                <div class="tentang-values">
+                    <div class="value-item">
+                        <i class="fas fa-award"></i>
+                        <h4>Kualitas Premium</h4>
+                        <p>Menggunakan bahan katun primissima terbaik dan pewarna alami yang tahan lama.</p>
+                    </div>
+                    
+                    <div class="value-item">
+                        <i class="fas fa-hands-helping"></i>
+                        <h4>Ramah Lingkungan</h4>
+                        <p>Proses pembuatan yang memperhatikan kelestarian lingkungan.</p>
+                    </div>
+                    
+                    <div class="value-item">
+                        <i class="fas fa-users"></i>
+                        <h4>Kemitraan</h4>
+                        <p>Memberdayakan pengrajin lokal dan membuka peluang bisnis bagi reseller.</p>
+                    </div>
+                    
+                    <div class="value-item">
+                        <i class="fas fa-heart"></i>
+                        <h4>Cinta Budaya</h4>
+                        <p>Melestarikan warisan budaya Indonesia melalui motif-motif batik klasik.</p>
+                    </div>
+                </div>
+                
+                <!-- <div class="tentang-contact">
+                    <h4>Kontak Kami</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Jl. Raya Kertijayan, Buaran, Pekalongan, Jawa Tengah.</p>
+                    <p><i class="fas fa-phone"></i> 0882-0164-50467 (Admin)</p>
+                    <p><i class="fas fa-envelope"></i> arfatbyriziq@gmail.com</p>
+                    <p><i class="fab fa-instagram"></i> @arfatbyriziq</p>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>Arfat<span>byRiziq</span></h3>
+                <p>Menjual batik berkualitas dengan motif tradisional dan modern. Melayani grosir, retail, dan custom order.</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/arfat_byriziq?igsh=MXFleXFpM3U0dDBuMQ%3D%3D"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/ArfatbyRiziq"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.tiktok.com/@arfatgallery?_r=1&_t=ZS-93SpEbKspt4"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://wa.me/6289501165912"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Produk</h4>
+                <ul>
+                    <li><a href="#">Hem Batik</a></li>
+                    <li><a href="#">Daster Batik</a></li>
+                    <li><a href="#">Gamis Batik</a></li>
+                    <li><a href="#">Sarung Batik</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Layanan</h4>
+                <ul>
+                    <li><a href="#motif">Pesan Seragam</a></li>
+                    <li><a href="#reseller">Join Reseller</a></li>
+                    <li><a href="#testimoni">Testimoni</a></li>
+                    <li><a href="#tentang">Tentang Kami</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Kontak</h4>
+                <ul>
+                    <li><i class="fas fa-phone"></i> +62 882-0164-50467</li>
+                    <li><i class="fas fa-envelope"></i> arfatbyriziq@gmail.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Kertijayan - Pekalongan, Jawa Tengah</li>
+                </ul>
+                <a href="https://wa.me/6285879562367?text=Halo,%20saya%20ingin%20bertanya%20tentang%20produk%20Arfat%20by%20Riziq" class="btn-wa-footer" target="_blank">
+                    <i class="fab fa-whatsapp"></i> Chat WhatsApp
+                </a>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 Arfat by Riziq.</p>
+        </div>
+    </footer>
+</body>
+</html>
