@@ -121,7 +121,7 @@ if (minusBtn && plusBtn && jumlahInput) {
 
 function updateQuantitySummary() {
     if (summaryJumlah && jumlahInput) {
-        summaryJumlah.textContent = `${jumlahInput.value} pcs`;
+        summaryJumlah.textContent = `${jumlahInput.value} paket`;
     }
 }
 
@@ -177,7 +177,7 @@ if (waButton) {
         // Get form values
         const nama = document.getElementById('nama').value || 'Pelanggan';
         const wa = document.getElementById('wa').value || '';
-        const motif = selectedMotifElement ? selectedMotifElement.textContent : 'Parang';
+        const motif = selectedMotifElement ? selectedMotifElement.textContent : '-';
         const ukuran = summaryUkuran ? summaryUkuran.textContent : '-';
         const jumlah = jumlahInput ? jumlahInput.value : '1';
         const catatan = document.getElementById('catatan').value || '';
@@ -188,9 +188,9 @@ if (waButton) {
                        `Nama: ${nama}%0A` +
                        `No. WA: ${wa}%0A` +
                        `Motif: ${motif}%0A` +
-                       `Ukuran: ${ukuran}%0A` +
-                       `Jumlah: ${jumlah} pcs%0A` +
-                       `Estimasi Harga: ${harga}%0A` +
+                    //    `Ukuran: ${ukuran}%0A` +
+                       `Jumlah: ${jumlah} paket%0A` +
+                    //    `Estimasi Harga: ${harga}%0A` +
                        `Catatan: ${catatan}%0A%0A` +
                        `Mohon info lebih lanjut mengenai pemesanan ini. Terima kasih.`;
         
@@ -227,3 +227,23 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+const backToTop = document.getElementById('backToTop');
+
+// tampilkan tombol saat scroll
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+        backToTop.style.display = 'block';
+    } else {
+        backToTop.style.display = 'none';
+    }
+});
+
+// klik → scroll ke atas
+backToTop.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
+
