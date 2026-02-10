@@ -20,6 +20,11 @@
     --transition: all 0.3s ease;
 }
 
+html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -29,13 +34,21 @@ body {
     color: var(--text);
     line-height: 1.6;
     background-color: var(--light);
-
-    /* ngatur background */
     background-image: url('/asset/bg.jpeg');
-    background-size: cover; /* atau 'contain' */
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed; /* opsional: membuat background tetap saat scroll */
+    background-attachment: fixed;
+    position: relative;
+}
+
+/* overlay transparansi */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-color: rgba(255, 255, 255, 0.75); /* atur transparansi di sini */
+    z-index: -1;
 }
 
 h1, h2, h3, h4 {
@@ -47,11 +60,14 @@ h1, h2, h3, h4 {
 h1 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
+    letter-spacing: 0.5px;
+
 }
 
 h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
+    letter-spacing: 0.5px;
 }
 
 .nrimo {
@@ -134,28 +150,28 @@ img {
 }
 
 .btn-primary {
-    background-color:var(--secondary);
+    background-color: var(--primary);
     color: var(--white);
 }
 
 .btn-primary:hover {
-    background-color: #72460c;
+    background-color: var(--secondary);
     transform: translateY(-3px);
 }
 
 .btn-secondary {
     background-color: transparent;
     color: var(--primary);
-    border: 2px solid var(--primary);
+    border: 2px solid var(--secondary);
 }
 
 .btn-secondary:hover {
-    background-color: var(--primary);
+    background-color: var(--secondary);
     color: var(--white);
 }
 
 .btn-wa {
-    background-color: #25D366;
+    background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
     color: white;
     width: 100%;
     padding: 1rem;
@@ -164,7 +180,9 @@ img {
 }
 
 .btn-wa:hover {
-    background-color: #128C7E;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+    background: #128C7E;
 }
 
 /* Navbar */
@@ -262,7 +280,7 @@ img {
 .hero-content p {
     font-size: 1.1rem;
     margin-bottom: 2rem;
-    color: #313435;
+    color: var(--gray);
 }
 
 .hero-buttons {
@@ -298,13 +316,7 @@ img {
 .slide {
     min-width: 25%;
     padding: 0.5rem;
-
-        background-color: var(--white);
-    border-radius: var(--radius);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    margin: 0.5rem;
-    transition: var(--transition);
-    overflow: hidden;
+    
 }
 
 .slide img {
@@ -318,6 +330,7 @@ img {
 .slide-info {
     padding: 0.5rem;
     text-align: center;
+    background-color: var(--white);
 }
 
 .slide-info h4 {
@@ -325,7 +338,7 @@ img {
 }
 
 .slide-info p {
-    color: var(--primary);
+    color: var(--text);
     font-weight: 600;
     margin-bottom: 0;
 }
@@ -338,13 +351,13 @@ img {
     border: none;
     width: 40px;
     height: 40px;
-    border-radius: 50%;
+    border-radius: var(--radius);
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
     font-size: 1.2rem;
-    color: var(--dark);
+    color: var(--text);
     transition: var(--transition);
     z-index: 10;
 }
@@ -360,6 +373,36 @@ img {
 .next-btn {
     right: 10px;
 }
+
+.lihat-semua-produk {
+    text-align: center;
+    margin-top: 2.5rem;
+}
+
+.lihat-semua-produk p {
+    margin-bottom: 0.8rem;
+    color: var(--text);
+    font-size: 0.95rem;
+}
+
+.btn-lihat-semua {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.9rem 1.8rem;
+    border-radius: var(--radius);
+    background: var(--primary);
+    color: var(--white);
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.btn-lihat-semua:hover {
+    background: #72460c;
+    transform: translateY(-2px);
+}
+
 
 /* Promo Section */
 .promo-section {
@@ -387,7 +430,7 @@ img {
     background-color: var(--accent);
     color: var(--dark);
     padding: 0.25rem 0.5rem;
-    border-radius: 4px;
+    border-radius: var(--radius);
 }
 
 .promo-image img {
@@ -459,7 +502,7 @@ img {
     height: 100px;
     width: 100%;
     object-fit: cover;
-    border-radius: 4px;
+    border-radius: var(--radius);
     margin-bottom: 0.5rem;
 }
 
@@ -483,7 +526,7 @@ img {
 }
 
 .jumlah-btn:hover {
-    background-color: #e0e0e0;
+    background-color: var(--white);
 }
 
 .jumlah-input input {
@@ -497,7 +540,7 @@ img {
 .info-text {
     font-size: 0.9rem;
     margin-top: 0.5rem;
-    color: var(--gray);
+    color: var(--text);
 }
 
 .order-summary {
@@ -557,7 +600,7 @@ img {
 
 .info-card h4 i {
     margin-right: 0.5rem;
-    color: var(--primary);
+    color: var(--text);
 }
 
 /* Testimoni Section */
@@ -721,7 +764,7 @@ img {
 
 /* Footer */
 .footer {
-    background-color: var(--dark);
+    background-color: var(--primary);
     color: var(--white);
     padding: 3rem 1.5rem 1.5rem;
 }
@@ -770,7 +813,7 @@ img {
     width: 40px;
     height: 40px;
     background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
+    border-radius: var(--radius);
     transition: var(--transition);
 }
 
@@ -781,7 +824,7 @@ img {
 
 .btn-wa-footer {
     display: inline-block;
-    background-color: #25D366;
+    background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
     color: white;
     padding: 0.75rem 1.5rem;
     border-radius: var(--radius);
@@ -791,7 +834,9 @@ img {
 }
 
 .btn-wa-footer:hover {
-    background-color: #128C7E;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+    background: #128C7E;
 }
 
 .footer-bottom {
@@ -800,71 +845,6 @@ img {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     color: #ccc;
     font-size: 0.9rem;
-}
-
-/* Responsive Styles */
-@media (max-width: 992px) {
-    h1 {
-        font-size: 2.2rem;
-    }
-    
-    h2 {
-        font-size: 1.8rem;
-    }
-    
-    .hero {
-        grid-template-columns: 1fr;
-        text-align: center;
-        padding-top: 7rem;
-    }
-    
-    .promo-section, .cta-reseller, .tentang-container {
-        grid-template-columns: 1fr;
-    }
-    
-    .motif-container {
-        grid-template-columns: 1fr;
-    }
-}
-
-@media (max-width: 768px) {
-    .menu-toggle {
-        display: flex;
-    }
-    
-    .nav-menu {
-        position: fixed;
-        top: 70px;
-        left: -100%;
-        flex-direction: column;
-        background-color: var(--white);
-        width: 100%;
-        text-align: center;
-        padding: 2rem 0;
-        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
-        transition: var(--transition);
-        z-index: 999;
-    }
-    
-    .nav-menu.active {
-        left: 0;
-    }
-    
-    .nav-menu li {
-        margin: 1rem 0;
-    }
-    
-    .produk-kategori, .tentang-values {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    
-    .slide {
-        min-width: 50%;
-    }
-    
-    .motif-options {
-        grid-template-columns: 1fr;
-    }
 }
 
 /* Produk Grid Card */
@@ -890,6 +870,11 @@ img {
     opacity: 0;
     transform: translateY(20px);
     animation: fadeInUp 0.5s ease forwards;
+    transition: transform 0.4s ease;
+}
+
+.product-card:hover img {
+    transform: scale(1.05);
 }
 
 .product-card:nth-child(1) { animation-delay: 0.1s; }
@@ -937,6 +922,8 @@ img {
 
 /* Tombol Tampilkan Lebih Banyak */
 .show-more-container {
+    display: flex;
+    justify-content: center;
     text-align: center;
     margin-top: 3rem;
 }
@@ -946,7 +933,7 @@ img {
     color: white;
     border: none;
     padding: 1rem 2rem;
-    border-radius: 50px;
+    border-radius: var(--radius);
     font-size: 1rem;
     font-weight: 600;
     cursor: pointer;
@@ -979,15 +966,75 @@ img {
 .all-shown .product-card:nth-child(7) { animation-delay: 0.4s; }
 .all-shown .product-card:nth-child(8) { animation-delay: 0.5s; }
 
-/* Responsif */
+#backToTop {
+    position: fixed;
+    bottom: 24px;
+    right: 20px;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    border: none;
+    background-color: #7a4a2e; /* coklat batik */
+    color: #FAF3E0;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+    z-index: 999;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+    backdrop-filter: blur(6px);
+}
+
+#backToTop:hover {
+    background-color: #72460c;
+}
+
+@media (max-width: 576px) {
+    #backToTop {
+        width: 38px;
+        height: 38px;
+        font-size: 18px;
+        bottom: 20px;
+    }
+}
+
+/* Responsive Styles */
 @media (max-width: 992px) {
     .products-grid {
         grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
         gap: 1.5rem;
     }
+
+        h1 {
+        font-size: 2.2rem;
+    }
+    
+    h2 {
+        font-size: 1.8rem;
+    }
+    
+    .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding-top: 7rem;
+    }
+    
+    .promo-section, .cta-reseller, .tentang-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .motif-container {
+        grid-template-columns: 1fr;
+    }
 }
 
+
 @media (max-width: 768px) {
+    .hero-buttons a {
+        font-size: 0.85rem;
+        min-height: 38px;
+        border-radius: 10px;
+    }
+
     .products-grid {
         grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
         gap: 1rem;
@@ -1000,14 +1047,106 @@ img {
         object-position: center; /* Posisi fokus gambar */
         display: block;
     }
+
+    .menu-toggle {
+        display: flex;
+    }
+    
+    .nav-menu {
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        flex-direction: column;
+        background-color: var(--white);
+        width: 100%;
+        text-align: center;
+        padding: 2rem 0;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        transition: var(--transition);
+        z-index: 999;
+    }
+    
+    .nav-menu.active {
+        left: 0;
+    }
+    
+    .nav-menu li {
+        margin: 1rem 0;
+    }
+    
+    .produk-kategori, .tentang-values {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .slide {
+        min-width: 50%;
+        cursor: pointer;
+    }
+    
+    .motif-options {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width: 576px) {
+    .hero-buttons a {
+        font-size: 0.85rem;
+        min-height: 38px;
+        border-radius: 10px;
+    }
+
     .products-grid {
         grid-template-columns: 1fr;
         max-width: 350px;
         margin-left: auto;
         margin-right: auto;
     }
-}
+    
+    .tentang-image img {
+        width: 100%;
+        max-width: 280px;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+    }
 
+    .section-header p {
+        font-size: 16px;
+        color : #313435;
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+    .tentang-content p{
+        font-size: 16px;
+    }
+
+    .tentang-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .tentang-content {
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .tentang-content p,
+    .tentang-content h3,
+    .tentang-content h4 {
+        white-space: normal;
+        word-break: break-word;
+        overflow-wrap: break-word;
+        text-align: left;
+    }
+
+    .tentang-values {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+    }
+
+    .value-item {
+        padding: 1rem 0.5rem;
+    }
+}
