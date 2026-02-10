@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katalog Produk - Produk Kami</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="katalog.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                &larr; Kembali
+            </a>
+        </div>
+    </header>
+    
+     <br>
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Categories Filter -->
+        <div class="categories-filter">
+            <div class="dropdown">
+                <button class="dropdown-toggle">
+                    <span id="selectedCategory">Semua Produk</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+
+                <ul class="dropdown-menu">
+                    <li data-category="all">Semua Produk</li>
+                    <li data-category="pakaian-pria">Pakaian Pria</li>
+                    <li data-category="pakaian-wanita">Pakaian Wanita</li>
+                    <li data-category="ibadah">Perlengkapan Ibadah</li>
+                    <li data-category="pakaian-anak">Pakaian Anak</li>
+                    <li data-category="kain">Kain</li>
+
+
+                    <!-- <li data-category="all">Semua Produk</li>
+                    <li data-category="sarung">Sarung</li>
+                    <li data-category="gamis">Gamis</li>
+                    <li data-category="kemeja">Kemeja</li>
+                    <li data-category="mukena">Mukena</li>
+                    <li data-category="rok">Rok</li>
+
+                    <li data-category="celana">Celana</li>
+                    <li data-category="sarung">Sarung</li>
+                    <li data-category="setelan">Setelan</li>
+                    <li data-category="daster">Daster</li>
+                    <li data-category="sackdress">Sackdress</li>
+                    <li data-category="blouse">Blouser</li>
+                    <li data-category="hem">Hem</li>
+                    <li data-category="baju anak">Baju Anak</li> -->
+                </ul>
+            </div>
+        </div>
+
+
+        <!-- Products Grid -->
+        <div class="products-grid">
+            <!-- Product 1 -->
+            <div class="product-card" data-category="ibadah">
+                <div class="product-image">
+                    <img src="/asset/sarung rayon.jpeg" alt="Sarung">
+                    <div class="product-badge">Premium</div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Sarung</h3>
+                    <p class="product-description">Sarung batik tersedia dalam berbagai pilihan bahan berkualitas yang nyaman dipakai, menampilkan motif khas yang elegan untuk menunjang aktivitas ibadah maupun keseharian.</p>
+                    
+                    <div class="product-cta">
+                        <a href="https://wa.me/6285879562367?text=Halo admin, saya tertarik dengan produk Sarung Katun, boleh lihat varian produknya?" class="whatsapp-btn" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Tanya Detail via WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Product 2 -->
+            <div class="product-card" data-category="pakaian-wanita">
+                <div class="product-image">
+                    <img src="/asset/gamis katun.jpeg" alt="Gamis">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Gamis</h3>
+                    <p class="product-description">Produk gamis hadir dengan desain anggun dan pilihan bahan berkualitas, menampilkan motif yang elegan serta nyaman dikenakan untuk berbagai kesempatan.</p>
+                    
+                    <div class="product-cta">
+                        <a href="https://wa.me/6285879562367?text=Halo admin, saya tertarik dengan produk Gamis Katun, boleh lihat varian produknya?" class="whatsapp-btn" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Tanya Detail via WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Product 3 -->
+            <div class="product-card" data-category="ibadah">
+                <div class="product-image">
+                    <img src="/asset/mukena.jpeg" alt="Mukena Terusan">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Mukena</h3>
+                    <p class="product-description">Mukena batik dengan motif elegan dan bahan halus yang nyaman dipakai, menjadikan momen ibadah terasa lebih tenang dan istimewa.</p>
+
+                    
+                    <div class="product-cta">
+                        <a href="https://wa.me/6285879562367?text=Halo admin, saya tertarik dengan produk Mukena Terusan, boleh lihat varian produknya?" class="whatsapp-btn" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Tanya Detail via WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="pakaian-wanita">
+                <div class="product-image">
+                    <img src="/asset/tunik.jpeg" alt="Tunik">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Tunik</h3>
+                    <p class="product-description">Tunik batik ini hadir dengan desain elegan dan potongan nyaman, memadukan motif batik khas dengan siluet modern yang cocok untuk tampilan santun dan stylish sehari-hari.</p>
+                    <div class="product-cta">
+                        <a href="https://wa.me/6285879562367?text=Halo admin, saya tertarik dengan produk Mukena Setelan, boleh lihat varian produknya?" class="whatsapp-btn" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Tanya Detail via WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Product 4 -->
+            <div class="product-card" data-category="pakaian-pria">
+                <div class="product-image">
+                    <img src="/asset/kemeja tulis tanpa furing.jpeg" alt="Kemeja">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Kemeja</h3>
+                    <p class="product-description">Produk kemeja hadir dengan desain rapi dan modern, menggunakan bahan berkualitas dengan motif menarik yang nyaman dikenakan untuk aktivitas formal maupun kasual.</p>
+                    
+                    <div class="product-cta">
+                        <a href="https://wa.me/6285879562367?text=Halo admin, saya tertarik dengan produk Kemeja Polimikro, boleh lihat varian produknya?" class="whatsapp-btn" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Tanya Detail via WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="pakaian-wanita">
+                <div class="product-image">
+                    <img src="/asset/blouse.jpeg" alt="Blouse Polimikro">
+                    <div class="product-badge">Eksklusif</div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Blouse</h3>
+                    <p class="product-description">Blouse batik hadir dengan desain feminin dan elegan, memadukan motif khas dengan bahan nyaman untuk menunjang penampilan sehari-hari maupun acara formal.</p>
+                    
+                    <div class="product-cta">
+                        <a href="https://wa.me/6285879562367?text=Halo admin, saya tertarik dengan produk Rok, boleh lihat varian produknya?" class="whatsapp-btn" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Tanya Detail via WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="pakaian-anak">
+                <div class="product-image">
+                    <img src="/asset/hem anak.jpeg" alt="Hem">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Hem Anak</h3>
+                    <p class="product-description">Hem anak tersedia dengan desain menarik dan motif variatif, dibuat dari bahan nyaman dan adem untuk mendukung aktivitas anak dengan tampilan rapi.</p>
+                    
+                    <div class="product-cta">
+                        <a href="https://wa.me/6285879562367?text=Halo admin, saya tertarik dengan produk Kemeja Katun, boleh lihat varian produknya?" class="whatsapp-btn" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Tanya Detail via WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div> 
+
+             <div class="product-card" data-category="kain">
+                <div class="product-image">
+                    <img src="/asset/kain cap halus.jpeg" alt="kain Seragam">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Kain Seragam</h3>
+                    <p class="product-description">Kain batik tersedia dalam berbagai pilihan motif dan warna yang serasi, cocok digunakan sebagai seragam keluarga maupun instansi agar tampil serasi dan rapi.</p>
+                    
+                    <div class="product-cta">
+                        <a href="https://wa.me/6285879562367?text=Halo admin, saya tertarik dengan produk Kemeja Katun, boleh lihat varian produknya?" class="whatsapp-btn" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Tanya Detail via WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div> 
+
+            <!-- Product 5 -->            
+            <div class="product-card" data-category="pakaian-pria">
+                <div class="product-image">
+                    <img src="/asset/hem.jpeg" alt="Hem">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Hem Batik</h3>
+                    <p class="product-description">Hem batik hadir dengan desain klasik dan modern, menggunakan bahan berkualitas yang nyaman dipakai untuk menunjang penampilan rapi dan berkarakter.</p>
+                    
+                    <div class="product-cta">
+                        <a href="https://wa.me/6285879562367?text=Halo admin, saya tertarik dengan produk Kemeja Katun, boleh lihat varian produknya?" class="whatsapp-btn" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Tanya Detail via WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>          
+
+            <!-- Product 6 -->   
+            <div class="product-card" data-category="pakaian-pria">
+                <div class="product-image">
+                    <img src="/asset/kaos abstrak.jpeg" alt="Kaos">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Kaos</h3>
+                    <p class="product-description">Kaos hadir dengan desain simpel dan modern, menggunakan bahan lembut dan nyaman untuk menunjang aktivitas sehari-hari.</p>
+                    
+                    <div class="product-cta">
+                        <a href="https://wa.me/6285879562367?text=Halo admin, saya tertarik dengan produk Kemeja Semi Sutra, boleh lihat varian produknya?" class="whatsapp-btn" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Tanya Detail via WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="pakaian-anak">
+                <div class="product-image">
+                    <img src="/asset/hem.jpeg" alt="Hem">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Piyama Anak</h3>
+                    <p class="product-description">Piyama batik anak hadir dengan pilihan motif variatif dan potongan nyaman, menggunakan bahan lembut agar anak tetap leluasa dan nyaman saat beristirahat.</p>
+                    
+                    <div class="product-cta">
+                        <a href="https://wa.me/6285879562367?text=Halo admin, saya tertarik dengan produk Kemeja Katun, boleh lihat varian produknya?" class="whatsapp-btn" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Tanya Detail via WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+             <div class="product-card" data-category="kain">
+                <div class="product-image">
+                    <img src="/asset/kain gendong.jpeg" alt="kain gendong">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Kain Gendongan Bayi</h3>
+                    <p class="product-description">Kain gendongan bayi dibuat dari bahan berkualitas yang kuat dan lembut, dipadukan dengan motif khas bernuansa etnik untuk kenyamanan dan keamanan saat menggendong bayi.</p>
+                    
+                    <div class="product-cta">
+                        <a href="https://wa.me/6285879562367?text=Halo admin, saya tertarik dengan produk Kain Gendongan Bayi, boleh lihat varian produknya?" class="whatsapp-btn" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Tanya Detail via WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div> 
+
+            <!-- Product 6 -->   
+            <div class="product-card" data-category="pakaian-pria">
+                <div class="product-image">
+                    <img src="/asset/celana.jpeg" alt="Celana">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Celana Batik </h3>
+                    <p class="product-description">Celana batik hadir dengan desain modern dan potongan nyaman, memadukan motif khas dengan bahan berkualitas untuk tampilan stylish dan fleksibel digunakan sehari-hari.</p>
+                    
+                    <div class="product-cta">
+                        <a href="https://wa.me/6285879562367?text=Halo admin, saya tertarik dengan produk Kemeja Kombinasi Tulis, boleh lihat varian produknya?" class="whatsapp-btn" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Tanya Detail via WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="product-card" data-category="pakaian-anak">
+                <div class="product-image">
+                    <img src="/asset/hem.jpeg" alt="Hem">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Dress Anak</h3>
+                    <p class="product-description">Dress batik anak hadir dengan desain anggun dan manis, memadukan motif batik menarik dengan bahan nyaman untuk tampilan cantik di berbagai acara.</p>
+                    
+                    <div class="product-cta">
+                        <a href="https://wa.me/6285879562367?text=Halo admin, saya tertarik dengan produk Kemeja Katun, boleh lihat varian produknya?" class="whatsapp-btn" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Tanya Detail via WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Product 7 -->
+            <div class="product-card" data-category="pakaian-wanita">
+                <div class="product-image">
+                    <img src="/asset/rok.jpeg" alt="Rok">
+                    <div class="product-badge">Eksklusif</div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Rok</h3>
+                    <p class="product-description">Rok batik ini memadukan motif tradisional yang cantik dengan bahan nyaman, cocok untuk tampilan anggun di berbagai kesempatan.</p>
+                    <div class="product-cta">
+                        <a href="https://wa.me/6285879562367?text=Halo admin, saya tertarik dengan produk Rok, boleh lihat varian produknya?" class="whatsapp-btn" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Tanya Detail via WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Product 8 -->
+            <div class="product-card" data-category="pakaian-wanita">
+                <div class="product-image">
+                    <img src="/asset/daster canda.jpeg" alt="Daster">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Daster</h3>
+                    <p class="product-description">Daster hadir dengan berbagai model menarik dan bahan nyaman, menampilkan desain santai yang pas digunakan untuk aktivitas harian di rumah.</p>
+                    
+                    <div class="product-cta">
+                        <a href="https://wa.me/6285879562367?text=Halo admin, saya tertarik dengan produk Rok, boleh lihat varian produknya?" class="whatsapp-btn" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Tanya Detail via WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+             <div class="product-card" data-category="kain">
+                <div class="product-image">
+                    <img src="/asset/kain jarik.jpeg" alt="kain kain jarik">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Kain Jarik</h3>
+                    <p class="product-description">Kain jarik hadir dengan motif tradisional khas Nusantara, dibuat dari bahan nyaman yang cocok dikenakan untuk busana adat maupun keseharian bernuansa etnik.</p>
+                    
+                    <div class="product-cta">
+                        <a href="https://wa.me/6285879562367?text=Halo admin, saya tertarik dengan produk Kemeja Katun, boleh lihat varian produknya?" class="whatsapp-btn" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Tanya Detail via WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>            
+            
+            <!-- Product 12 -->
+            <div class="product-card" data-category="pakaian-wanita">
+                <div class="product-image">
+                    <img src="/asset/sackdress.jpeg" alt="Sakcdress">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Sackdress</h3>
+                    <p class="product-description">Sackdress hadir dengan desain cantik dan simpel, memberikan kesan anggun serta nyaman dikenakan untuk berbagai aktivitas santai maupun semi formal.</p>
+                    <div class="product-cta">
+                        <a href="https://wa.me/6285879562367?text=Halo admin, saya tertarik dengan produk Mukena Setelan, boleh lihat varian produknya?" class="whatsapp-btn" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Tanya Detail via WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 12 -->
+            <div class="product-card" data-category="pakaian-wanita">
+                <div class="product-image">
+                    <img src="/asset/setelan.jpeg" alt="Setelan">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Setelan</h3>
+                    <p class="product-description">Setelan batik tersedia dalam beragam model dan desain, menghadirkan perpaduan motif elegan dan bahan berkualitas untuk menunjang penampilan yang stylish dan nyaman.</p>
+                    <div class="product-cta">
+                        <a href="https://wa.me/6285879562367?text=Halo admin, saya tertarik dengan produk Mukena Setelan, boleh lihat varian produknya?" class="whatsapp-btn" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Tanya Detail via WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const categoryButtons = document.querySelectorAll('.category-btn');
+    const productCards = document.querySelectorAll('.product-card');
+
+    function filterProducts(category) {
+        productCards.forEach(card => {
+            const cardCategory = card.getAttribute('data-category');
+
+            if (category === 'all' || cardCategory === category) {
+                card.style.display = 'flex';
+            } else {
+                card.style.display = 'none';
+            }
+        });
+
+        // active button
+        categoryButtons.forEach(btn => {
+            btn.classList.toggle('active', btn.dataset.category === category);
+        });
+    }
+
+    // 🔹 klik filter manual
+    categoryButtons.forEach(button => {
+        button.addEventListener('click', function () {
+            const category = this.dataset.category;
+            filterProducts(category);
+
+            // update URL
+            if (category === 'all') {
+                history.replaceState(null, '', 'katalog.html');
+            } else {
+                history.replaceState(null, '', `#${category}`);
+            }
+        });
+    });
+
+    // 🔹 auto filter dari URL hash
+    const hash = window.location.hash.replace('#', '');
+    if (hash) {
+        filterProducts(hash);
+    } else {
+        filterProducts('all');
+    }
+
+    /* ===============================
+       ANIMASI SCROLL (tetap dipakai)
+    ================================ */
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
+            }
+        });
+    }, { threshold: 0.1 });
+
+    productCards.forEach(card => {
+        card.style.opacity = '0';
+        card.style.transform = 'translateY(20px)';
+        card.style.transition = '0.5s';
+        observer.observe(card);
+    });
+});
+</script>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const dropdown = document.querySelector('.dropdown');
+    const toggle = document.querySelector('.dropdown-toggle');
+    const menuItems = document.querySelectorAll('.dropdown-menu li');
+    const selectedText = document.getElementById('selectedCategory');
+    const productCards = document.querySelectorAll('.product-card');
+
+    function filterProducts(category) {
+        productCards.forEach(card => {
+            const cardCategory = card.dataset.category;
+            card.style.display =
+                category === 'all' || cardCategory === category
+                ? 'flex'
+                : 'none';
+        });
+    }
+
+    // toggle dropdown
+    toggle.addEventListener('click', () => {
+        dropdown.classList.toggle('active');
+    });
+
+    // pilih kategori
+    menuItems.forEach(item => {
+        item.addEventListener('click', () => {
+            const category = item.dataset.category;
+            selectedText.textContent = item.textContent;
+
+            filterProducts(category);
+            dropdown.classList.remove('active');
+
+            if (category === 'all') {
+                history.replaceState(null, '', 'katalog.html');
+            } else {
+                history.replaceState(null, '', `#${category}`);
+            }
+        });
+    });
+
+    // klik luar → tutup dropdown
+    document.addEventListener('click', e => {
+        if (!dropdown.contains(e.target)) {
+            dropdown.classList.remove('active');
+        }
+    });
+
+    // auto dari URL hash
+    const hash = window.location.hash.replace('#', '');
+    if (hash) {
+        const item = document.querySelector(`[data-category="${hash}"]`);
+        if (item) {
+            selectedText.textContent = item.textContent;
+            filterProducts(hash);
+        }
+    } else {
+        filterProducts('all');
+    }
+});
+</script>
+</body>
+</html>
